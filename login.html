@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head><LINK REL="SHORTCUT ICON"
+       HREF="http://localhost/epos/slike/smajli.jpg">
+
+<title>Premiere | Log in</title>
+<link rel="stylesheet" type="text/css" href="stil.css"/>
+
+<meta http-equiv="Content-Language" content="sr" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript">
+
+
+function validacija() {
+
+	if (document.forms[0].ime.value=='') {
+		alert("Niste uneli korisničko ime!");
+		document.forms[0].ime.focus();
+		return false
+	}
+	if (document.forms[0].lozinka.value=='') {
+		alert("Niste uneli lozinku!");
+		document.forms[0].lozinka.focus();
+		return false;
+	}
+	
+	return confirm("Uspešno ste se ulogovali.");
+}
+	
+
+</script>
+</head>
+  <body>
+  <div id="header">
+    
+    <a href="login.html" style="color:white" >Prijavi se</a>
+	</div>
+		<div id="wrap">
+		<ul id="menu">
+	   
+		<ul> 
+		<li><a href="sajt.html"style="color: white">Početna</a></li> 
+		
+		<li><a href="#"style="color: white">Filmovi</a>
+		   <ul>
+		   <li><a href="ubioskopima.html"style="color: white">U bioskopima</a></li>
+		   <li><a href="uskoro.html"style="color: white">Uskoro</a></li>
+		   </ul>
+		</li>
+		
+		<li><a href="#"style="color: white">Lokacije</a>
+		 <ul>
+		   <li><a href="beograd.html"style="color: white">Beograd</a></li>
+		   <li><a href="vranje.html"style="color: white">Vranje</a></li>
+		   <li><a href="loznica.html"style="color: white">Loznica</a></li>
+		 </ul>
+		</li> 
+
+		<li><a href="rez.html" style="color: white">Rezervacija</a></li>		
+		<li><a href="galerija.html"style="color: white">Galerija</a></li>
+		</ul>
+		</ul>
+
+		    <div id="log" >
+			<form onsubmit="return validacija()">
+
+            <br/><br/><br>
+		    <b>Unesite korisničko ime i lozinku: </b>
+			<br>
+			<br>
+			<b>Korisničko ime:</b> 
+			<input type="text" name="ime" required>
+			<br>
+			<br>
+			<b>&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp Lozinka:</b> 
+			<input type="password" name="lozinka">
+			<br>
+			<br>
+
+
+
+	<INPUT type="submit" value="Uloguj se" name="submit" style="padding:3px background-color:#D8D8D8 border:1px solid #B0B0B0 " border-radius:3px cursor:pointer box-shadow:1px 1px 1px 1px > &nbsp
+	<INPUT type="reset" value="Obrisi podatke" name="reset" style="padding:3px background-color:#D8D8D8 border:1px solid #B0B0B0 " border-radius:3px cursor:pointer box-shadow:1px 1px 1px 1px ><br><br>
+
+</form>
+			</div>
+			
+			
+			<br/><br/>
+			
+	    
+
+	 <div id="footer"><p>Ljiljana, Ivana, Andjela </p>
+	 <div id='ikonice'><a href="http://instagram.com/"><img src="slike/instagram.jpg"> </a></div>
+     </div>
+
+	</div>
+		</div>
+</body>
+
+
+</html>
+
+

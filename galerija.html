@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head><LINK REL="SHORTCUT ICON"
+       HREF="http://localhost/epos/slike/smajli.jpg">
+
+<title>Bioskop | Galerija</title>
+<link rel="stylesheet" type="text/css" href="stil.css"/>
+<meta name="viewport" content="width=device-width">
+ <link rel="stylesheet" href="css/font-awesome.min.css">
+<meta http-equiv="Content-Language" content="sr" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="jquery.js"></script>
+
+
+		<style>
+			#slike{ width: 750px; height: 420px; background:#000 }
+			
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding-top:70px;
+    }
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+  
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+       width: auto;
+        height: auto;
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px)  {
+      .container {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: auto;
+        height: auto;
+      }
+    }
+ 
+		</style>
+
+
+
+</head>
+  <body>
+
+  <audio autoplay="autoplay" controls="controls">  
+    <source src="file.ogg" />  
+    <source src="pesma.mp3" />  
+    <a href="file.mp3">Download this file.</a>  
+</audio>
+
+  <div id="header">
+    
+    <a href="login.html" style="color:white" >Prijavi se</a>
+	</div>
+    <div id="wrap">
+    <ul id="menu">
+	   
+		<ul> 
+		<li><a href="sajt.html"style="color: white">Početna</a></li> 
+		
+		<li><a href="#"style="color: white">Filmovi</a>
+		   <ul>
+		   <li><a href="ubioskopima.html"style="color: white">U bioskopima</a></li>
+		   <li><a href="uskoro.html"style="color: white">Uskoro</a></li>
+		   </ul>
+		</li>
+		
+		<li><a href="#"style="color: white">Lokacije</a>
+		 <ul>
+		   <li><a href="beograd.html"style="color: white">Beograd</a></li>
+		   <li><a href="vranje.html"style="color: white">Vranje</a></li>
+		   <li><a href="loznica.html"style="color: white">Loznica</a></li>
+		 </ul>
+		</li> 
+		<li><a href="rez.html"style="color: white">Rezervacija</a></li>		
+		<li><a href="#"style="color: white">Galerija</a></li>
+		</ul>
+		
+		
+		</ul>
+		<br/>
+		<div id="naslovrep">Pogledajte enterijer naših bioskopa</div>
+	
+
+	 <div class="container">
+    <div id="slides">
+      <img src="img/galerija1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="img/galerija2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="img/galerija3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="img/galerija4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <img src="img/galerija5.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <img src="img/galerija6.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <img src="img/galerija7.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <img src="img/galerija8.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <img src="img/galerija9.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+    </div>
+  </div>
+  <!-- End SlidesJS Required: Start Slides -->
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
+  
+   <div id="footer"><p>Ljiljana, Ivana, Andjela </p>
+   <div id='ikonice'><a href="http://instagram.com/"><img src="slike/instagram.jpg"> </a></div>
+     </div>
+
+</body>
+</html>

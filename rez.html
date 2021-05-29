@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="SHORTCUT ICON"  HREF="http://localhost/epos/slike/smajli.jpg">
+
+<title>Bioskop | Rezervacija</title>
+<link rel="stylesheet" type="text/css" href="stil.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script type="text/javascript">
+
+ 
+ $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+
+	function rezervacija() {
+	
+		if (!proveriradio(document.forms[0].bios)) { 
+		alert('Morate odabrati bioskop.');
+		return false;
+		}
+		if (document.forms[0].datepicker.value=='') {
+		alert("Niste odabrali datum!");
+		document.forms[0].datepicker.focus();
+		return false
+		}
+		if (!proveriradio(document.forms[0].film)) { 
+		alert('Niste odabrali koji film želite da gledate!');
+		return false;
+		}
+
+		if (document.forms[0].broj.value=='') {
+		alert("Morate uneti broj karata!");
+		document.forms[0].broj.focus();
+		return false;
+		}
+	return confirm("Ispravno ste uneli sve podatke, da li potvrdjujete rezervaciju?");
+	}
+
+	function proveriradio(dugme) {
+	for(var i = 0; i < dugme.length; i++) {
+		if(dugme[i].checked) return true;
+	}
+	return false;
+    }
+	
+
+</script>
+
+
+<meta http-equiv="Content-Language" content="sr" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+  <body>
+  <div id="header">
+    
+    <a href="login.html" style="color:white" >Prijavi se</a>
+	</div>
+		<div id="wrap">
+		<ul id="menu">
+	   
+		<ul> 
+		<li><a href="sajt.html"style="color: white">Početna</a></li> 
+		
+		<li><a href="#"style="color: white">Filmovi</a>
+		   <ul>
+		   <li><a href="ubioskopima.html"style="color: white">U bioskopima</a></li>
+		   <li><a href="uskoro.html"style="color: white">Uskoro</a></li>
+		   </ul>
+		</li>
+		
+		<li><a href="#"style="color: white">Lokacije</a>
+		 <ul>
+		   <li><a href="beograd.html"style="color: white">Beograd</a></li>
+		   <li><a href="vranje.html"style="color: white">Vranje</a></li>
+		   <li><a href="loznica.html"style="color: white">Loznica</a></li>
+		 </ul>
+		</li> 
+	
+		<li><a href="#" style="color: white">Rezervacija</a></li>		
+		<li><a href="galerija.html"style="color: white">Galerija</a></li>
+		</ul>
+		
+		
+		</ul>
+		
+		<div id="naslovrep">Rezervišite kartu na vreme!</div> <br/>
+		
+		<div id="rezer">
+		
+	<form onsubmit="return rezervacija()">
+			
+		<b>Izaberite bioskop</b>&nbsp
+		<input type="radio" name="bios" value="bg"/> Beograd &nbsp
+		<input type="radio" name="bios" value="lo"/> Loznica &nbsp
+		<input type="radio" name="bios" value="vr"/> Vranje 
+		<br><br/>
+		<p><b>Datum &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b> <input type="text" id="datepicker" /></p>
+		 <br><br/>
+	
+		<b>Izaberite film</b><br><br/>
+		<input type="radio" name="film" value="f1"/>"Captain Fantastic"<br/>
+		<input type="radio" name="film" value="f2"/>"The legend of Tarzan"<br/>
+		<input type="radio" name="film" value="f3"/>"Nerve"<br/>
+		<input type="radio" name="film" value="f4"/>"Inferno"<br/>
+		<input type="radio" name="film" value="f5"/>"The secret life of pets"<br/>
+		<input type="radio" name="film" value="f4"/>"X-Men: Apocalipsy"<br/>
+		<input type="radio" name="film" value="f5"/>"Suicide Squad"<br/>
+        <br>
+		<b>Broj karata</b>
+		<input type="text" name="broj" ><br/><br/>
+		<br>
+
+
+		</script>
+	 
+		<input type="submit" name="submit" value="Kupi" style="padding: 3px; background-color:#D8D8D8; border:1px solid #B0B0B0 ; 
+		border-radius:3px;cursor:pointer; height:30px; width:100px;"/>
+		<input type="reset" value="Obriši podatke" name="reset" style="padding:3px; background-color:#D8D8D8; border:1px solid #B0B0B0 ; border-radius:3px ;cursor:pointer;height:30px; width:100px;"><br><br>
+		</form>
+		</div>	
+			
+			
+	  <div id="footer"><p>Ljiljana, Ivana, Andjela </p>
+	 <div id='ikonice'><a href="http://instagram.com/"><img src="slike/instagram.jpg"> </a></div>
+
+	</div>
+		</div>
+</body>
+
+
+</html>
+
+

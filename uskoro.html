@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="SHORTCUT ICON" HREF="http://localhost/epos/slike/smajli.jpg">
+
+<title>Bioskop | Uskoro</title>
+<link rel="stylesheet" type="text/css" href="stil.css"/>
+
+<meta http-equiv="Content-Language" content="sr" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript">
+
+elmColor = 0;
+
+
+    function changeColor(elmColor)
+    {  
+         switch(elmColor)
+        {
+            case 0:
+            document.getElementById('colorChange').style.color = 'red';
+            elmColor++; 
+            break;
+            
+            case 1:
+            document.getElementById('colorChange').style.color = 'green'; 
+            elmColor++;
+            break;
+	
+            case 2:
+            document.getElementById('colorChange').style.color = '#FF0099'; 
+            elmColor++;
+            break;
+			
+			case 3:
+            document.getElementById('colorChange').style.color = 'blue'; 
+            elmColor = 0;
+            break;                                            
+            default:
+            break;
+        }
+        setTimeout(function(){changeColor(elmColor);}, 700);
+    }
+window.onload = function(){changeColor(elmColor);}
+</script>			
+				
+</head>
+  <body>
+		<div id="header">
+		 <a href="login.html" style="color:white" >Prijavi se</a>
+		</div>
+		<div id="wrap">
+		<ul id="menu">
+	   
+		<ul> 
+		<li><a href="sajt.html" style="color: white"> Početna</a></li> 
+		
+		<li><a href="#" style="color: white">Filmovi</a>
+		   <ul>
+		   <li><a href="ubioskopima.html" style="color: white">U bioskopima</a></li>
+		   <li><a href="#" style="color: white">Uskoro</a></li>
+		   </ul>
+		</li>
+		
+		<li><a href="#" style="color: white">Lokacije</a>
+		 <ul>
+		   <li><a href="beograd.html" style="color: white">Beograd</a></li>
+		   <li><a href="vranje.html"style="color: white">Vranje</a></li>
+		   <li><a href="loznica.html"style="color: white">Loznica</a></li>
+		 </ul>
+		</li> 
+			
+		<li><a href="rez.html"style="color: white">Rezervacija</a></li>
+		<li><a href="galerija.html"style="color: white">Galerija</a></li>
+		
+		</ul>
+		
+		
+		</ul>
+		<div id="naslovrep">Uskoro u bioskopima</div>
+		
+		
+	<div id="uskoro">
+	    
+		<table border=0  >
+		<tr>
+		
+
+		<td><a href="https://www.youtube.com/watch?v=sC9abcLLQpI" title="Klikni za trailer"><img src="http://localhost/epos/slike/rogue.jpg" style="border: 2px solid #ccc;"><a/></td>
+
+		<td><div id="colorChange" style="font-size:32px;font-family:Centaur">EKSKLUZIVNO!!!</div><b><i>"Rogue One: A Star Wars Story"</b></i><br>
+		od 15.12.2016 | Action, Adventure, Sci-Fi | 133 min <br/> "Rogue One: A Star Wars Story",
+		an upcoming American epic space opera film directed by Gareth Edwards and written by Chris Weitz, Tony Gilroy, and Gary Whitta, from a story idea by visual effects supervisor John Knoll.[1] It will be the first stand-alone Star Wars Anthology film. Set in the Star Wars universe some time after the events of Star Wars: Episode III – Revenge of the Sith and shortly before the events of the original Star Wars, the story will center on a group of Rebel spies on a mission to steal the plans for the Galactic Empire's new weapon, the Death Star. It will star Felicity Jones, Diego Luna, Ben Mendelsohn, Donnie Yen, Mads Mikkelsen, Alan Tudyk, Jiang Wen and Forest Whitaker.</td>
+		
+		</tr>
+
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=7BWWWQzTpNU" title="Klikni za trailer"><img src="http://localhost/epos/slike/pass.jpg" style="border: 2px solid #ccc;"><a/></td>
+
+			<td><b><i>"Passengers"</b></i><br/> od 21.12.2016 | Adventure, Drama, Romance  | 116 min <br/>
+			On a routine journey through space to a new home, two passengers, sleeping in suspended animation, are awakened 90 years too early when their ship malfunctions. As Jim and Aurora face living the rest of their lives on board, with every luxury they could ever ask for, they begin to fall for each other, unable to deny their intense attraction until they discover the ship is in grave danger. With the lives of 5,000 sleeping passengers at stake, only Jim and Aurora can save them all.
+			</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=LKFuXETZUsI" title="Klikni za trailer"><img src="http://localhost/epos/slike/moana.jpg" style="border: 2px solid #ccc;"></a></td>
+			<td><b><i>"Moana"</b></i><br/> od 23.11.2016 |  Animation, Adventure, Comedy | 103 min <br/>
+			PAn adventurous teenager sails out on a daring mission to save her people. During her journey, Moana meets the once-mighty demigod Maui, who guides her in her quest to become a master way-finder. Together they sail across the open ocean on an action-packed voyage, encountering enormous monsters and impossible odds. Along the way, Moana fulfills the ancient quest of her ancestors and discovers the one thing she always sought: her own identity.
+			</td>
+		</tr>
+		
+		</table>
+		
+
+	
+	<div id="footer"><p>Ljiljana, Ivana, Andjela </p>
+	 <div id='ikonice'><a href="http://instagram.com/"><img src="slike/instagram.jpg"> </a></div>
+
+	</div>
+	 </div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,273 @@
+
+*{
+margin:0;
+padding:0;}
+*
+
+body{
+background-image:url("http://localhost/epos/slike/pozadina3.jpg");
+background-size:100%;
+background-attachment:fixed;
+height:100%;
+
+}
+
+#wrap{
+padding-bottom:45px;
+background-color:#F8F8F8 ;
+margin-top:200px;
+margin-left:200px;
+margin-right:200px;
+margin-bottom:30px;
+border:1px solid;
+border-radius:10px;
+box-shadow: 5px 5px 3px #006699;
+position:relative;
+min-height:100%;
+}
+
+
+#menu{
+  text-decoration:none; 
+  text-align: center;
+  display: inline;
+  margin: 10 5 10;
+  padding: 10px 3px 0;
+  list-style: none;
+  margin:2px 2px 3px;
+  font-family:"Trebuchet MS";
+  color:#006699;
+}
+#menu li {
+  height: 22px;
+  width:90px;
+  display: inline-block;
+  margin-left: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #003366 ;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border:1px solid;
+  border-radius:5px;
+  
+}
+#menu li:hover {
+  background-color: #006699;
+}
+#menu li ul {
+  padding: 0;
+  position: absolute;
+  top: 52px;
+  left: 2px;
+  width: 150px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+#menu li ul li { 
+  background: #006699; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  height: 22px;
+  width:112px;
+  padding:10px 10px;
+}
+#menu li ul li:hover { background: #0099FF ; }
+#menu li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+#filmovi{
+text-align:justify;
+padding:7px;
+margin-left:50px;
+margin-right:50px;
+}
+
+#filmovi table{
+border-spacing:20px 10px;
+
+}
+
+
+
+
+#uskoro{
+text-align:justify;
+padding:7px;
+margin-bottom:50px;
+margin-left:50px;
+margin-right:50px;
+}
+#uskoro table{
+border-spacing:10px 2px;
+}
+#lokacija{
+margin:10px;
+margin-left:50px;
+}
+
+#lokacija table{
+border-spacing:10px 2px;
+}
+
+
+
+#footer {
+font-family:French Script MT;
+position:absolute;
+font-size: 20px;
+color:#000;
+text-align: center;
+border-top: 1px solid #006699;
+padding: 10px 5px;
+width:100%;
+height:30px;	
+bottom:0;
+left:0;
+
+}
+
+a{
+text-decoration:none;
+color:#FFFFFF:}
+
+#slideshow{
+border:1px solid #F0F0F0 ;
+margin-left:120px;
+text-align:center;
+height:auto;
+width:auto;}
+
+#ikonice{
+margin-top:-25px;
+margin-left:700px;}
+
+
+
+#slike{
+margin-top:15px;
+margin-left:100px;
+margin-bottom:50px;
+color:#F5F5F5;
+border:2px solid #DCDCDC;
+
+
+}
+#img_title{
+position:fixed;
+ z-index:1;
+ left:10px; 
+ top:10px; 
+ padding:10px;
+ color:#FFF; 
+ font-family:"Bradley Hand ITC";
+ font-size:24px; 
+ text-transform:uppercase;
+}
+ 
+
+
+#header{
+padding-top:2px;
+margin-top:3px;
+font-size:18px;
+font-family:"Trebuchet MS";
+height:23px;
+padding-right:4px;
+padding-left:10px;
+padding-bottom:2px;
+text-align:center;
+margin-left:1055px;
+width:auto;
+height: auto;
+background-color:#003366;
+
+}
+#log{
+height:320px;
+margin:80px 230px 30px;
+background-image:url("slike/dd2.jpg");
+background-size:100%;
+padding-left:20px;
+padding-top:10px;
+padding-right:20px;
+text-align:center;
+}
+
+
+#rezer{
+padding:20px 20px 20px 20px;
+
+background-image:url("slike/pocornfinal.jpg");
+background-repeat:no-repeat;
+background-size:100%;
+background-color:#F0F0F0;
+width:auto;
+height: auto;
+border:10px solid #E0E0E0;
+margin-bottom:20px;
+}
+
+ #naslovrep{
+ font-family:"Centaur";
+ font-weight:100;
+ font-size:40px;
+ text-align:center;
+ }
+ 
+.jumbotron{
+background: #1B222A url(../img/jumbotron_bg.jpg) no-repeat top center;
+color: white;
+height: 500px;
+overflow: none;
+}
+.jumbotron h1{
+margin-top: 60px;
+}
+.jumbotron .app-btn {
+width: 40%;
+margin-right: 30px;
+}
+.jumbotron .showcase-img{
+width: 75%;
+}
+ 
+.img-responsive {
+max-width: 100%;
+height: auto;
+
+}
+
+@media (max-width: 830px) {
+    #slideshow {
+        margin-left: 0px;
+    }
+
+    #slideshow-image {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (min-width: 831px) and (max-width: 1164px) {
+    #slideshow-image {
+        width: 300px;
+        height: auto;
+    }
+}
